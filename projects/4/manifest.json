@@ -1,0 +1,15 @@
+{
+  "short_name": "App",
+  "name": "3 Screen App",
+  "icons": [
+    {
+      "src":"img.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#000",
+  "Theme_color": "#536878",
+  "display": "standalone"
+}
