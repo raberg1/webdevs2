@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Report Card Data</title>
+    </head>
+    <body>
+        <h2>School Report Card Data</h2>
+        <hr>
+        <p>Data for Lane Tech has been logged to the console</p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                
+                var baseURL = "https://data.cityofchicago.org/resource/iqnd-nmue.json"
+                
+                var filters = "?school_id=609720";
+                
+                var url = baseURL + filters;
+                
+                $.getJSON(url, function(data){
+                    $.each(data, function(i,v){
+                        console.log(data);  
+                        
+                    })
+                })
+            })
+        </script>
+    </body>
+</html>
